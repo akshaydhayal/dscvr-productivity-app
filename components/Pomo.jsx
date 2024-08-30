@@ -927,7 +927,7 @@ export default function Pomo() {
 
   return (
     <>
-      <div className="card w-96 bg-base-200 shadow-xl flex flex-col items-center justify-center py-4 my-auto">
+      <div className=" border card w-96 bg-base-200 shadow-xl flex flex-col items-center justify-center py-4 my-auto">
         <div
           className="radial-progress bg-primary text-primary-content border-4 border-primary text-4xl mb-4"
           style={{
@@ -953,7 +953,7 @@ export default function Pomo() {
               +1
             </button>
           </p>
-          <div className="flex flex-col items-center justify-center">
+          {/* <div className="flex flex-col items-center justify-center">
             <button onClick={autoDownCount} className="btn w-full" disabled={pomodoro}>
               ↕️ Auto Count Up/Down
             </button>
@@ -966,10 +966,10 @@ export default function Pomo() {
             <span className="text-primary-500">
               auto count: <span>{auto ? "on" : "off"}</span>
             </span>
-          </div>
+          </div> */}
           <div className="divider"></div>
           <div className="flex flex-col items-center justify-center">
-            <button className="btn btn-primary text-lg w-full" onClick={controlPomodoro}>
+            <button className="btn border border-slate-300 btn-primary text-lg w-full" onClick={controlPomodoro}>
               🍅 Pomodoro Start/End
             </button>
             <em className="text-sm">Focus for 30min. Don&apos;t forget a small break after!</em>

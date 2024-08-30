@@ -63,16 +63,16 @@ export default function TodoApp() {
   };
 
   return (
-    <main className={`bg-bg-desktop-dark w-full bg-gray-900 min-h-screen bg-no-repeat  flex justify-center`}>
+    <main className={`bg-bg-desktop-dark w-full h-[90vh] overflow-scroll bg-gray-900 min-h-screen bg-no-repeat  flex justify-center`}>
       {/* <div className="flex flex-col w-full sm:w-2/3 md:w-3/4 lg:w-4/5 xl:w-1/2 p-10 sm:p-20"> */}
-      <div className="flex flex-col w-full p-10 sm:p-20">
+      <div className="flex flex-col w-full p-8 sm:p-20">
         {/* <a href="https://markrosario.vercel.app/" target="_blank" className={`text-white text-sm absolute bottom-0 right-0 p-2`}>
           Made with ❤️ by Mark Rosario
         </a> */}
         {/* HEADER */}
         <div className="flex items-center justify-between w-full">
           {/* <div className="tracking-[0.4em] text-4xl text-white font-bold">TODO</div> */}
-          <div className={` tracking-[0.4em] text-4xl text-white font-bold`}>TODO</div>
+          <div className={` tracking-[0.2em] text-4xl text-white font-bold`}>TODO</div>
           <button onClick={toggleTheme}>
             <Image
               className={`${theme === "light" ? "fill-svgBlack" : "fill-svgWhite"} cursor-pointer`}
@@ -84,8 +84,8 @@ export default function TodoApp() {
           </button>
         </div>
         {/* INPUT */}
-        <div className={`bg-gray-800 flex text-lg rounded-md mt-12 py-4 px-5 items-center gap-5`}>
-          <div className={`border-gray-600 rounded-full border-[1px] w-6 h-6 shrink-0`}></div>
+        <div className={`bg-gray-800 flex text-base font-medium rounded-md mt-6 py-2 px-2 items-center gap-1`}>
+          <div className={`border-gray-600 rounded-full border-[1px] w-4 h-4 shrink-0`}></div>
           <input
             type="text"
             name="todo"
@@ -108,7 +108,7 @@ export default function TodoApp() {
               <Task key={task.id} theme={theme} task={task} toggleState={toggleState} handleDeleteTask={handleDeleteTask} />
             ))}
           {/* Status Bar */}
-          <div className={`text-gray-500 flex justify-between items-center rounded-b-md text-xs py-3 px-5 `}>
+          <div className={`text-gray-500 flex justify-between items-center rounded-b-md text-xs py-2 px-4 `}>
             <div className="font-semibold w-1/3 text-left">{tasks.filter((task) => task.state === "Active").length} items left</div>
             <div className="hidden sm:flex gap-3 font-bold w-1/3 text-center ">
               {["All", "Active", "Completed"].map((text, i) =>
@@ -143,7 +143,7 @@ export default function TodoApp() {
           </div>
         </div>
         {/* MOBILE FILTER */}
-        <div className={`bg-gray-800 shadow-gray-900 flex mt-5 gap-3 justify-center rounded-md shadow-sm py-4 px-5 visible sm:hidden`}>
+        <div className={`bg-gray-800 shadow-gray-900 flex mt-3 gap-3 justify-center rounded-md shadow-sm py-2 px-4 visible sm:hidden`}>
           {["All", "Active", "Completed"].map((text, i) =>
             theme === "light" ? (
               <button

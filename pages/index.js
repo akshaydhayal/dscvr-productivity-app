@@ -12,16 +12,12 @@ export default function Home() {
   const [activeComponent,setActiveComponent]=useState('timer');
   console.log(activeComponent);
   return (
-    <div className="flex w-screen">
-      <Head>
-        <title>My Awesome Next.js App</title>
-        <meta name="dscvr:canvas:version" content="vNext"/>
-        <meta name="og:image" content="https://my-canvas.com/preview-image.png"/>
-      </Head>
-      <div className="w-1/2">
+    <div className="flex gap-10 w-screen">
+      
+      <div className="w-1/2 h-screen">
         <TodoApp />
       </div>
-      <div className="w-1/2">
+      <div className="w-1/2 h-screen">
         <PomoDoro />
       </div>
       {/* <Navbar activeComponent={activeComponent} setActiveComponent={setActiveComponent}/>
