@@ -967,7 +967,7 @@ export default function Pomo() {
               auto count: <span>{auto ? "on" : "off"}</span>
             </span>
           </div> */}
-          <div className="divider"></div>
+          {/* <div className="divider"></div> */}
           <div className="flex flex-col items-center justify-center">
             <button className="btn border border-slate-300 btn-primary text-lg w-full" onClick={controlPomodoro}>
               🍅 Pomodoro Start/End
