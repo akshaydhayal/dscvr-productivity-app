@@ -23,7 +23,9 @@ const defaultDark =
 let checkBox = !ISSERVER ? document.getElementById('checkbox') : null;
 
 if (defaultDark) {
-  checkBox.checked = true;
+  if(checkBox){
+    checkBox.checked = true;
+  }
 }
 
 const toggleTheme = (e) => {
