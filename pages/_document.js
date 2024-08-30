@@ -55,7 +55,7 @@ export default class MyDocument extends Document {
       <Html lang="en">
         {/* <Head /> */}
         <Head>
-          <title>My Awesome Next.js App</title>
+          <title>Productivity App</title>
           <meta name="dscvr:canvas:version" content="vNext" />
           <meta name="og:image" content="https://my-canvas.com/preview-image.png" />
         </Head>

@@ -84,7 +84,7 @@ export default function TodoApp() {
           </button>
         </div>
         {/* INPUT */}
-        <div className={`bg-gray-800 flex text-base font-medium rounded-md mt-6 py-2 px-2 items-center gap-1`}>
+        <div className={`bg-gray-800 flex text-base font-medium rounded-md mt-6 py-2 px-2 items-center gap-3`}>
           <div className={`border-gray-600 rounded-full border-[1px] w-4 h-4 shrink-0`}></div>
           <input
             type="text"
