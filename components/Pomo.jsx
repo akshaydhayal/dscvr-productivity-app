@@ -941,8 +941,8 @@ export default function Pomo() {
           <span>
             <span className="text-primary-500 text-xl text-transform: uppercase">{!pomodoro ? work : "🍅 focusing..."}</span>
           </span>
-          <div className="divider"></div>
-          <p className="text-center mb-4">
+          {/* <div className="divider"></div> */}
+          <p className="text-center mb-4 mt-1">
             <button onClick={downOne} className="btn btn-accent btn-square mr-2 text-2xl" disabled={pomodoro}>
               -1
             </button>
