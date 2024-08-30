@@ -927,7 +927,7 @@ export default function Pomo() {
 
   return (
     <>
-      <div className=" border card w-96 bg-base-200 shadow-xl flex flex-col items-center justify-center py-4 my-auto">
+      <div className="card w-96 bg-base-200 shadow-xl flex flex-col items-center justify-center py-4 my-auto">
         <div
           className="radial-progress bg-primary text-primary-content border-4 border-primary text-4xl mb-4"
           style={{

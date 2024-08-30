@@ -7,7 +7,7 @@ import { useState } from "react";
 export default function Task(props) {
   const [isHover, setIsHover] = useState(false);
   return (
-    <div key={props.task.id} className={`${props.theme === "light" ? "border-gray-200" : "border-gray-700"} flex py-2 px-4 items-center gap-4 border-b-[1px]`}>
+    <div key={props.task.id} className={`${props.theme === "light" ? "border-gray-200" : "border-gray-700"} flex py-2 px-4 items-center gap- border-b-[1px]`}>
       <span
         className="cursor-pointer select-none"
         onClick={() => {

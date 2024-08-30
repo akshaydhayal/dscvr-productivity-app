@@ -38,7 +38,7 @@ const toggleTheme = (e) => {
 
 export default function DarkMode() {
   return (
-    <div className='form-control border flex flex-row justify-center items-center mt-1'>
+    <div className='form-control flex flex-row justify-center items-center mt-1'>
       <span className='label-text text-3xl mr-1'>☀️</span>
       <label className='label cursor-pointer' htmlFor='checkbox'>
         <input
