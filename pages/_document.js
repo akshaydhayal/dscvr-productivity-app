@@ -52,12 +52,17 @@ const blockingSetInitialColorMode = `(function() {
 export default class MyDocument extends Document {
   render() {
     return (
-      <Html lang='en'>
-        <Head />
+      <Html lang="en">
+        {/* <Head /> */}
+        <Head>
+          <title>My Awesome Next.js App</title>
+          <meta name="dscvr:canvas:version" content="vNext" />
+          <meta name="og:image" content="https://my-canvas.com/preview-image.png" />
+        </Head>
         <body>
           <script
             dangerouslySetInnerHTML={{
-              __html: blockingSetInitialColorMode
+              __html: blockingSetInitialColorMode,
             }}
           ></script>
           <Main />
